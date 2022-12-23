@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="utf-8">
+        <meta name="referrer" content="no-referrer">
+     <title></title>
+ <script>
+ var c,b,image=new Image();
+ window.onload=function(){
+ c=document.getElementById("myCanvas");
+ b=c.getContext('2d');
+ image.src="https://docimg6.docs.qq.com/image/AgAABS7DEZf-i89ZiZVOEaXuLEOdZJZE.png?w=200&h=200";
+ big();
+ }
+ function big(){
+  b.clearRect(100,100,200,200);
+  b.drawImage(image,70,70,250,250);
+  setTimeout("small()",500);
+ }
+ function small(){
+ b.clearRect(70,70,250,250);
+  b.drawImage(image,100,100,200,200);
+  setTimeout("big()",500);
+ }
+ </script>
+ </head>
+ <body>
+ <canvas id="myCanvas" width="400px" height="400px" style=" background-color: black;"></canvas>
+ </body>
+</html>
