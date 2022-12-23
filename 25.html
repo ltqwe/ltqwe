@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>跑动的汽车</title> 
+    <style>
+        @keyframes one{    
+            0% {left: 0px; top: 280px;}
+            25% {left: 280px; top: 280px;}
+            50% {left: 280px; top: 0px;}
+            75% {left: 30px; top: 0px;}
+            100% {left: 0px; top: 280px;}
+         }
+        .car{
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            animation: one 4s infinite;
+         }
+        .L{
+            width: 350px;
+            height: 350px;
+            border:solid 5px ;
+            border-radius: 50px;
+         }
+        .T{
+            width: 250px;
+            height: 250px;
+            border:solid 5px ;
+            border-radius: 40px;
+            position: relative;
+            top: -280px;
+            left: 35px;
+         }
+        .QQ{
+            width: 280px;
+            height: 280px;
+            border:dashed 5px ;
+            border-radius: 25px;
+            position: relative;
+            top: -550px;
+            left: 19px;
+         }
+    </style>
+</head>
+<body>
+    <div class="L"></div>
+    <div class="T"></div>
+    <div class="QQ"></div>
+    <img src="https://docimg1.docs.qq.com/image/AgAABS7DEZfdVAKq4qNEM5nZhdo0YyS3.png?w=200&h=200
+" class="car"/>
